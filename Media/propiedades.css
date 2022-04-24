@@ -1,0 +1,377 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+        .nav{
+            grid-area: nav;
+            background-color: rgb(233, 255, 254);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+        }
+            ul{
+                list-style: none;
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                li{
+                    display: inline-block;
+                    font-size: 20px;
+                }
+
+    /*@media*/
+    @media (max-width:400px){
+        .nav{
+            grid-area: nav;
+            background-color: rgb(233, 255, 254);
+            display: flex;
+            
+        }
+        .logo{
+            display: none;
+        }
+            ul{
+                list-style: none;
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+            }
+                li{
+                    justify-self: left;
+                    display: inline-block;
+                    font-size: 20px;
+                }
+    }
+    /*@media*/
+        @media (max-width:400px){
+            .subtitulos{
+                padding-left:0;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 5px;
+            }
+            .subtitulos2{
+                padding-left: 0;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style:italic;
+            }
+            .imgs{
+                padding-left: 0;
+            }
+            .parrafos{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic;
+                padding-left: 0;
+                padding-bottom: 1cm;
+            }
+        }
+        /*@media*/
+
+    .titulos{
+        grid-area: titulo;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        letter-spacing: 10px;
+        padding-top: 50px;
+    }
+    .subtitulos{
+        padding-left: 1cm;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+    }
+    .subtitulos2{
+        padding-left: 1cm;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:italic;
+    }
+    .imgs{
+        padding-left: 1cm;
+    }
+    .parrafos{
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        padding-left: 1.5cm;
+        padding-bottom: 2cm;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: rgb(234, 246, 250);
+        display: flex;
+        justify-content: center;
+    }
+        .footer__ul{
+            list-style: none;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+            .footer__ul__li{
+                display: inline-block;
+                font-size: 20px;
+            }
+    /*GENERAL*/
+
+    /*CONTACTO*/
+    .contacto__subRedes{
+        margin-left: 1cm;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:italic;
+        text-align: center;
+    }
+    .redesImg{
+        display: flex;
+        justify-content: center;
+    }
+    .gridContacto{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px auto auto 100px 100px;
+        grid-template-areas: "nav    "
+                             "titulo "
+                             "quienes"
+                             "quees  "
+                             "redes  "
+                             "footer ";
+    }
+    .quienes{
+        grid-area: quienes;
+    }
+    .quees{
+        grid-area: quees;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    @media (max-width: 400px){
+        .gridContacto{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 400px;
+            grid-template-rows: 100px 100px auto auto 100px 100px;
+            grid-template-areas: "nav    "
+                                 "titulo "
+                                 "quienes"
+                                 "quees  "
+                                 "redes  "
+                                 "footer ";
+        }
+    }
+    /*CONTACTO*/
+
+    /*REGISTRO*/
+    .registro{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px auto 100px;
+        grid-template-areas:"nav    nav    "
+                            "titulo titulo "
+                            "form   form   "
+                            "footer footer ";
+    }  
+    .form{
+        grid-area: form;
+    }
+        .gridForm{
+            grid-area: form;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 100px 50px;
+            grid-template-areas: "nombre sexo    "
+                                 "piel   producto"
+                                 "boton  boton   ";
+        }
+        .registro__nombre{
+            grid-area: nombre;
+        }
+        .registro__sexo{
+            grid-area: sexo;
+        }
+        .registro__piel{
+            grid-area: piel;
+        }
+        .registro__productos{
+            grid-area: producto;
+        }
+        .registro__botones{
+            grid-area: boton;
+        }
+        .registro__subtitulos{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .registro__input{
+            background-color: rgb(218, 255, 255);
+            border-radius: 5px;
+        }
+        .registro__lbls{
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /*@media*/
+    @media (max-width:400px){
+        .registro{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 400px;
+            grid-template-rows: 100px 150px auto 100px;
+            grid-template-areas:"nav   "
+                                "titulo"
+                                "form  "
+                                "footer";
+        }  
+        .gridForm{
+            grid-area: form;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 400px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-areas: "nombre"
+                                 "sexo  "
+                                 "piel  "
+                                 "producto"
+                                 "boton  ";
+        }
+    }
+    /*@media*/
+/*REGISTRO*/
+
+/*INICIO*/
+.gridIndex{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 500px auto 100px;
+    grid-template-areas: "nav    nav   "
+                         "header header"
+                         "fav    recom "
+                         "footer footer";
+}
+.header{
+    grid-area: header;
+    background-image:url(./Imag/BANNER_LRP_CENTRO.webp);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerInfo{
+    padding: 90px;
+    text-align: center;
+    
+}
+.fav{
+    grid-area: fav;
+}
+.recom{
+    grid-area: recom;
+}
+/*@media*/
+@media (max-width:400px){ 
+    .gridIndex{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px;
+        grid-template-rows:  100px 500px 400px 400px 100px;
+        grid-template-areas:"nav   "
+                            "header"
+                            "fav   "    
+                            "recom "
+                            "footer";
+    }
+    .header{
+    grid-area: header;
+    background-image:url(./Imag/BANNER_LRP_CENTRO.webp);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .headerInfo{
+        padding: 20px;
+        text-align: center;
+        
+    }
+}
+/*@media*/
+/*INICIO*/
+
+/*RECOMENDACIONES*/
+.gridRecom{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px auto 100px;
+    grid-template-areas: "nav   "
+                         "titulo"
+                         "info  "
+                         "footer";
+}
+.infoRecom{
+    grid-area: info;
+}
+@media (max-width:400px){
+    .gridRecom{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 150px auto 100px;
+        grid-template-areas: "nav   "
+                             "titulo"
+                             "info  "
+                             "footer";
+        flex-wrap: wrap;
+    }
+
+}
+/*RECOMENDACIONES*/
+
+/*FAVORITOS*/
+.gridFav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px auto auto 100px;
+    grid-template-areas: "nav   "
+                         "titulo"
+                         "info  "
+                         "video "
+                         "footer";
+}
+.infoFav{
+    grid-area: info;
+}
+.videoFav{
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+/*@media*/
+@media (max-width:400px){
+    .gridFav{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 150px auto auto 100px;
+        grid-template-areas: "nav   "
+                             "titulo"
+                             "info  "
+                             "video "
+                             "footer";
+    }
+}
+/*FAVORITOS*/
