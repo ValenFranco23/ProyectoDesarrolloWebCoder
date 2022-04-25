@@ -5,7 +5,7 @@
 }
         .nav{
             grid-area: nav;
-            background-color: rgb(233, 255, 254);
+            background-image: linear-gradient(to bottom, rgb(192, 244, 241), white);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,55 +24,43 @@
                     font-size: 20px;
                 }
 
-    /*@media*/
-    @media (max-width:400px){
-        .nav{
-            grid-area: nav;
-            background-color: rgb(233, 255, 254);
-            display: flex;
-            
+    /*animación*/
+        @keyframes logo{
+            0%{opacity:0;}
+            100%{opacity: 1;} 
         }
         .logo{
-            display: none;
+            animation-name: logo;
+            animation-iteration-count:initial;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-duration: 5s
         }
-            ul{
-                list-style: none;
-                width: 100px;
-                display: flex;
-                flex-direction: column;
-            }
-                li{
-                    justify-self: left;
-                    display: inline-block;
-                    font-size: 20px;
-                }
-    }
+    /*animación*/
+
     /*@media*/
         @media (max-width:400px){
-            .subtitulos{
-                padding-left:0;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                letter-spacing: 5px;
+            .nav{
+                grid-area: nav;
+                background-color: rgb(233, 255, 254);
+                display: flex;
+                
             }
-            .subtitulos2{
-                padding-left: 0;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-style:italic;
+            .logo{
+                display: none;
             }
-            .imgs{
-                padding-left: 0;
-            }
-            .parrafos{
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-style: italic;
-                padding-left: 0;
-                padding-bottom: 1cm;
-            }
+                ul{
+                    list-style: none;
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    li{
+                        justify-self: left;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
         }
-        /*@media*/
+    /*@media*/
 
     .titulos{
         grid-area: titulo;
@@ -94,9 +82,17 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-style:italic;
     }
+    
+    /*transformaciones y transiciones*/
     .imgs{
         padding-left: 1cm;
+        transition: 1s;
     }
+    .imgs:hover{
+        transform: scale(1.2);
+    }
+    /*transformaciones y transiciones*/
+
     .parrafos{
         text-align: left;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -106,18 +102,17 @@
     }
     .footer{
         grid-area: footer;
-        background-color: rgb(234, 246, 250);
-        display: flex;
-        justify-content: center;
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgb(233, 255, 254), white);
     }
         .footer__ul{
             list-style: none;
-            width: 500px;
+            width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction:initial
         }
             .footer__ul__li{
-                display: inline-block;
                 font-size: 20px;
             }
     /*GENERAL*/
@@ -134,6 +129,16 @@
         display: flex;
         justify-content: center;
     }
+
+    /*transformaciones y transiciones*/
+    .redesImgTranslate{
+        transition: 1s;
+    }
+    .redesImgTranslate:hover{
+        transform: translate(0,10px);
+    }
+    /*transformaciones y transiciones*/
+
     .gridContacto{
         display: grid;
         gap: 10px;
@@ -274,7 +279,10 @@
 .headerInfo{
     padding: 90px;
     text-align: center;
-    
+    transition: 3s;
+}
+.headerInfo:hover{
+    transform: scale(1.1);
 }
 .fav{
     grid-area: fav;
