@@ -3,27 +3,6 @@
     margin: 0;
     padding: 0;
 }
-        .nav{
-            grid-area: nav;
-            background-image: linear-gradient(to bottom, rgb(192, 244, 241), white);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: visible;
-        }
-            ul{
-                list-style: none;
-                width: 500px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-                li{
-                    display: inline-block;
-                    font-size: 20px;
-                }
-
     /*animación*/
         @keyframes logo{
             0%{opacity:0;}
@@ -100,21 +79,7 @@
         padding-left: 1.5cm;
         padding-bottom: 2cm;
     }
-    .footer{
-        grid-area: footer;
-        height: 100px;
-        width: 100%;
-        background-image: linear-gradient(to bottom, rgb(233, 255, 254), white);
-    }
-        .footer__ul{
-            list-style: none;
-            width: 100%;
-            display: flex;
-            flex-direction:initial
-        }
-            .footer__ul__li{
-                font-size: 20px;
-            }
+    
     /*GENERAL*/
 
     /*CONTACTO*/
