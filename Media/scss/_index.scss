@@ -1,0 +1,65 @@
+.gridIndex{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 500px auto 100px;
+    grid-template-areas: "nav    nav   "
+                         "header header"
+                         "fav    recom "
+                         "footer footer";
+}
+.header{
+    margin-top: 20px;
+    grid-area: header;
+    background-image:url(./Imag/BANNER_LRP_CENTRO.webp);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .headerInfo{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        padding: 90px;
+        text-align: center;
+        transition: 3s;
+        .headerInfo:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.fav{
+    grid-area: fav;
+}
+.recom{
+    grid-area: recom;
+}
+
+/*@media*/
+@media (max-width:400px){ 
+    .gridIndex{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px;
+        grid-template-rows:  100px 500px 400px 400px 100px;
+        grid-template-areas:"nav   "
+                            "header"
+                            "fav   "    
+                            "recom "
+                            "footer";
+    }
+    .header{
+    background-image:url(./Imag/BANNER_LRP_CENTRO.webp);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .headerInfo{
+        padding: 20px;
+        text-align: center;
+        
+    }
+}
+/*@media*/

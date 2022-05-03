@@ -1,0 +1,26 @@
+
+.gridRecom{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px auto 100px;
+    grid-template-areas: "nav   "
+                         "titulo"
+                         "info  "
+                         "footer";
+}
+.infoRecom{
+    grid-area: info;
+}
+@media (max-width:400px){
+    .gridRecom{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 150px auto 100px;
+        grid-template-areas: "nav   "
+                             "titulo"
+                             "info  "
+                             "footer";
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,77 @@
+.registro{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 150px auto 100px;
+    grid-template-areas:"nav    nav    "
+                        "titulo titulo "
+                        "form   form   "
+                        "footer footer ";
+}  
+.form{
+    grid-area: form;
+}
+    .gridForm{
+        grid-area: form;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 50px;
+        grid-template-areas: "nombre sexo    "
+                             "piel   producto"
+                             "boton  boton   ";
+    }
+    .registro__nombre{
+        grid-area: nombre;
+    }
+    .registro__sexo{
+        grid-area: sexo;
+    }
+    .registro__piel{
+        grid-area: piel;
+    }
+    .registro__productos{
+        grid-area: producto;
+    }
+    .registro__botones{
+        grid-area: boton;
+    }
+    .registro__subtitulos{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .registro__input{
+        background-color: rgb(218, 255, 255);
+        border-radius: 5px;
+    }
+    .registro__lbls{
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /*@media*/
+@media (max-width:400px){
+    .registro{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 150px auto 100px;
+        grid-template-areas:"nav   "
+                            "titulo"
+                            "form  "
+                            "footer";
+    }  
+    .gridForm{
+        grid-area: form;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: "nombre"
+                             "sexo  "
+                             "piel  "
+                             "producto"
+                             "boton  ";
+    }
+}
+/*@media*/

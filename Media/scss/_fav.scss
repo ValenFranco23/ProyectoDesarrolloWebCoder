@@ -1,0 +1,34 @@
+*FAVORITOS*/
+.gridFav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px auto auto 100px;
+    grid-template-areas: "nav   "
+                         "titulo"
+                         "info  "
+                         "video "
+                         "footer";
+}
+.infoFav{
+    grid-area: info;
+}
+.videoFav{
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+/*@media*/
+@media (max-width:400px){
+    .gridFav{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 150px auto auto 100px;
+        grid-template-areas: "nav   "
+                             "titulo"
+                             "info  "
+                             "video "
+                             "footer";
+    }
+}
+/*FAVORITOS*/

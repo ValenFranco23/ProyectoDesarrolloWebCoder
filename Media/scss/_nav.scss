@@ -1,0 +1,62 @@
+.nav{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-area: nav;
+    background-image: linear-gradient(to bottom, rgb(192, 244, 241), white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}    
+ul{
+    list-style: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+li{
+    display: inline-block;
+    font-size: 20px;
+}
+.logo{
+    animation-name: logo;
+    animation-iteration-count:initial;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-duration: 5s
+} 
+/*animación*/
+@keyframes logo{
+    0%{opacity:0;}
+    100%{opacity: 1;} 
+}
+/*animación*/
+    
+/*@media*/
+    @media (max-width:400px){
+        .nav{
+            grid-area: nav;
+            background-color: rgb(233, 255, 254);
+            display: flex;
+            .logo{
+                display: flex;
+                justify-self: left;
+                align-self:center;
+            }
+                ul{
+                    display: none;
+                    list-style: none;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        justify-self: left;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+                }
+                   
+        }
+        }
+        
+/*@media*/

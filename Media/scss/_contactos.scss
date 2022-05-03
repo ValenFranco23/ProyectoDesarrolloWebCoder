@@ -1,0 +1,58 @@
+
+.gridContacto{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px auto auto 100px 100px;
+    grid-template-areas: "nav    "
+                         "titulo "
+                         "quienes"
+                         "quees  "
+                         "redes  "
+                         "footer ";
+}
+.quienes{
+    grid-area: quienes;
+}
+.quees{
+    grid-area: quees;
+}
+
+
+.redes{
+    grid-area: redes;
+    .contacto__subRedes{
+        margin-left: 1cm;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:italic;
+        text-align: center;
+        .redesImg{
+            display: flex;
+            justify-content: center;
+            /*transformaciones y transiciones*/
+                .redesImgTranslate{
+                    transition: 1s;
+                }
+                .redesImgTranslate:hover{
+                    transform: translate(0,10px);
+                }
+            /*transformaciones y transiciones*/
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .gridContacto{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 100px auto auto 100px 100px;
+        grid-template-areas: "nav    "
+                             "titulo "
+                             "quienes"
+                             "quees  "
+                             "redes  "
+                             "footer ";
+    }
+}
