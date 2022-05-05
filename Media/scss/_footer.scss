@@ -1,9 +1,9 @@
 .footer{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente;
     grid-area: footer;
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(233, 255, 254), white);
+    background-image: $transicion;
     align-items: flex-end;
     .footer__ul{
         list-style: none;

@@ -1,24 +1,24 @@
 .nav{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente;
     grid-area: nav;
-    background-image: linear-gradient(to bottom, rgb(192, 244, 241), white);
+    background-image: $transicion;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: visible;
-}    
-ul{
-    list-style: none;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    ul{
+        list-style: none;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            display: inline-block;
+            font-size: 20px;
+        }
+    } 
 }   
-li{
-    display: inline-block;
-    font-size: 20px;
-}
 .logo{
     animation-name: logo;
     animation-iteration-count:initial;
@@ -36,13 +36,12 @@ li{
     @media (max-width:400px){
         .nav{
             grid-area: nav;
-            background-color: rgb(233, 255, 254);
+            background-color: $transicion;
             display: flex;
             .logo{
                 display: flex;
                 justify-self: left;
                 align-self:center;
-            }
                 ul{
                     display: none;
                     list-style: none;
@@ -55,8 +54,7 @@ li{
                         font-size: 20px;
                     }
                 }
-                   
+            }       
         }
-        }
-        
+    }
 /*@media*/
