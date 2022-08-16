@@ -1,0 +1,44 @@
+[
+    {
+        "precio": 1000,
+        "id": 1,
+        "nombre": "Aros Redondos",
+        "codigo": "SV5440319",
+        "img": "./assets/img/swarovski/SV5440319.jpg"
+    },
+    {
+        "precio": 2000,
+        "id": 2,
+        "nombre": "Anillo Estrella",
+        "codigo": "SV5440319",
+        "img": "./assets/img/swarovski/SV5349666.jpg"
+    },
+    {
+        "precio": 3000,
+        "id": 3,
+        "nombre": "Anillo Cristal",
+        "codigo": "SV5474362",
+        "img": "./assets/img/swarovski/SV5474362.jpg"
+    },
+    {
+        "precio": 4000,
+        "id": 4,
+        "nombre": "Anillo Sol",
+        "codigo": "SV5482499",
+        "img": "./assets/img/swarovski/SV5482499.jpg"
+    },
+    {
+        "precio": 5000,
+        "id": 5,
+        "nombre": "Anillo 8 Puntas",
+        "codigo": "SV5494346",
+        "img": "./assets/img/swarovski/SV5494346.jpg"
+    },
+    {
+        "precio": 6000,
+        "id": 6,
+        "nombre": "Aros Oro",
+        "codigo": "SV5523550",
+        "img": "./assets/img/swarovski/SV5523550.jpg"
+    }
+]

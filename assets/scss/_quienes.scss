@@ -1,0 +1,46 @@
+.containerQuienes{
+	margin-top: 50px;
+	display: block;
+}
+.cardQuienes{
+    display: flex;
+	width: 1000px;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+}
+.cardQuienes2{
+   @extend .cardQuienes;
+   margin-left: 220px;
+}
+.cardQuienes:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.cardQuienes img{
+	width: auto;
+	height: 350px;
+}
+.infoQuienes{
+    align-self: center;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+@media screen and (max-width:800px){
+	.cardQuienes{
+		justify-content: center;
+		width: auto;
+		flex-wrap:wrap;
+		margin-right: 130px;
+		margin-left: 130px ;
+		margin-top: 50px;
+	}
+	.cardQuienes2{
+		@extend .cardQuienes;
+		flex-wrap:wrap-reverse;
+		
+	}
+}
